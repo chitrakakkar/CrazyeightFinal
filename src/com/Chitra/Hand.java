@@ -69,12 +69,12 @@ public class Hand
     }
 
 
-    public Integer CalculateHandTotalPoint()
+    public Integer CalculateHandTotalPoint(List<Card> CardsInHand)
     {
         int TotalPoint = 0;
-        for (Card cd:CardsinHand)
+        for (Card C:CardsinHand)
         {
-            TotalPoint += cd.Value;
+            TotalPoint += C.Value;
         }
         return TotalPoint;
     }

@@ -36,6 +36,8 @@ public class Player
         return PlayerHand.CardsinHand.size();
     }
 
+
+
 //    public void RemoveCardInHand( Card card)
 //    {
 //        System.out.println(PlayerHand.CardsinHand);
