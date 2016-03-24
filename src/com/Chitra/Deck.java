@@ -10,6 +10,7 @@ import java.util.Stack;
  */
 public  class Deck
 {
+    // stack of the card to create deck
   protected Stack<Card> DeckOfCard;
 
     public Stack<Card> getDeckOfCard() {
@@ -28,7 +29,8 @@ public  class Deck
         CardSuit.add("Hearts_");CardSuit.add("Diamonds_");CardSuit.add("Clubs_");CardSuit.add("Spades_");
 
 
-        //creating a deck
+        //creating a deck from 1 to 13 ..making it simple than ACE, Jack, Queen and King
+        // to make the calculation of the points easy
         for (String st:CardSuit)
         {
            for(int i =1;i<14;i++)
@@ -51,10 +53,5 @@ public  class Deck
     {
         return DeckOfCard.pop();
     }
-    //
-//    public Card AddCard(Card c)
-//    {
-//
-//    }
 
 }

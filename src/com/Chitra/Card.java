@@ -42,11 +42,15 @@ public class Card
         return this.Suit + this.Value;
     }
 
+    // cehck the legality of the card played.
+
     public boolean CheckLegalCard(Card card,Card PlayedCard,Player P)
     {
             boolean Flagg = true;
             if((card.Value.equals(8))|| ((card.Value.equals(PlayedCard.Value))||card.Suit.equals(PlayedCard.Suit)))
             {
+                // need to work on card.value.equals 8..pick suit.. Still working on it
+                // logic defined in the word document
                // System.out.println("legal check passed");
                 Flagg=true;
 
